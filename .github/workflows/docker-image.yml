@@ -44,4 +44,5 @@ jobs:
             image: ${{ secrets.DOCKERHUB_USERNAME }}/hccfrontendsftp:latest
             name: testingsftpfrontend
             location: 'ukwest'
-            port: 8334
+            ports: 8334
+            protocol: TCP
