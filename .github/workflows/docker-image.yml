@@ -41,6 +41,6 @@ jobs:
         with:
             resource-group: ${{ secrets.RESOURCE_GROUP }}
             dns-name-label: ${{ secrets.RESOURCE_GROUP2 }}
-            image: ${{ secrets.DOCKERHUB_USERNAME }}/testingsftpfrontend:latest
+            image: ${{ secrets.DOCKERHUB_USERNAME }}/hccfrontendsftp:latest
             name: testingsftpfrontend 
             location: 'UK West'
