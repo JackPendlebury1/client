@@ -34,7 +34,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/hccfrontendsftp:latest
       
       - name: 'Deploy to Azure Container Instances'
         uses: 'azure/aci-deploy@v1'
