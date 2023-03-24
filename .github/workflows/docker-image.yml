@@ -40,6 +40,7 @@ jobs:
         uses: 'azure/aci-deploy@v1'
         with:
             resource-group: ${{ secrets.RESOURCE_GROUP }}
+            dns-name-label: ${{ secrets.RESOURCE_GROUP2 }}
             image: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
             name: testingsftpfrontend 
-            location: 'west uk'
+            location: 'UK West'
