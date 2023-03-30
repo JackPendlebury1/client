@@ -83,6 +83,13 @@ export function Form({
             );
         } else if (struct.enabled === true) {
             return null;
+        } else if (struct.label === "advanced") {
+            return (
+                <label style={{ color: "rgba(0,0,0,0.4)" }}>
+                    { $input }
+                    { t("Advanced") }
+                </label>
+            );
         }
         return (
             <label htmlFor={props.params["id"]}
